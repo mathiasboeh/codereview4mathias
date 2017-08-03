@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="projectcf.css">
+</head>
+
+<body>
+    <div id="contot">
+        <header>
+            <nav>
+                <div id="navi">
+                    <a href="aboutme.html">About me</a>
+                    <a href="marvel.html">Marvel's Corner</a>
+                    <a href="coding.html">Coding</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main class="conP">
+        <h1>Ways to contact me</h1>
+        <div id='contact'>
+            <p>email:  mathias.boehner@outlook.de</p>
+            <p>phone:  +43 660 4827760</p>
+            <p>facebook:  Mathias Boeh</p>
+            <p>address:  Ybbsstraße 18/4, 1020 Vienna, Austria</p>
+           
+            <br>
+            
+            <p>Monday to thursday from 9am to 4pm you can also meet at CodeFactory where I train my coding skills <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/google/80/personal-computer_1f4bb.png" alt="computer"> </p>
+
+            <br>
+            
+            <div id="cofa">
+            <div id="map" style="width:400px;height:500px;border:black 3px solid;"></div>
+            <div id="coad">
+            <p style="font-weight:700; ">CodeFactory</p>
+            <p>Herklotzgasse 21</p>
+            <p>1150 Vienna, Austria</p>
+            </div>
+            </div>
+
+        </main>
+        <footer><p>All Marvel content is from <a href="https://www.marvel.com">marvel.com</a> and <a href="https://www.imdb.com">imdb.com</a>.</p>
+    <p>© Mathias 2017</p>
+        </footer>
+    </div>
+    <script>
+        function myMap() { 
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(48.189711, 16.334269),
+                zoom: 16
+            };
+            var myLatLng = { lat: 48.189711, lng: 16.334269 };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'CodeFactory'
+            });
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmX78GTTBiIGx7xcHrInX4cdWVR-zVxNQ&callback=myMap"></script>
+</body>
+
+</html>
