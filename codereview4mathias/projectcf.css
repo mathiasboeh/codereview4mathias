@@ -174,10 +174,31 @@ footer {
 	text-align: center;
 	font-size: 0.6em;
 	padding: 2px;
+
 }
 .aboP img {
 width: 460px;
 height: 346px;
 margin-bottom: 20px;
 border: black solid 3px
+}
+
+
+/*could not make them work*/
+@media only screen and (max-width: 320px) {
+
+   body { 
+      font-size: 2em;
+      color: green;
+   }
+
+}
+
+@media screen and (max-width: 600px){
+    #cofa { display: flex;
+    	flex-direction: column;
+    	background-color: blue;
+        
+    }
+    
 }
